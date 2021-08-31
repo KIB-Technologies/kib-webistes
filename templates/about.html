@@ -1,0 +1,227 @@
+{% extends 'templating.html' %}
+{% load static %}
+	{% block metatag %}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kib Technologies |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="Marketing and IT Services Provider Company in Dehradun and North India.">
+    <meta name="Keywords" content="Marketing and IT Services Provider ">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">	
+	{% endblock %}
+    {% block navtag %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li class="current"><a href="{% url 'about' %}">About Us</a></li>
+    <li><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown"><a href="#">Services</a>
+        <ul>
+            <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+	{% block content %}
+     <!-- Banner Section -->
+     <section class="page-banner">
+        <div class="image-layer" style="background-image:url({% static 'images/kib_technologies_breadcrums_banner.jpg' %});"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>About</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="index-2.html">Home</a></li>
+                            <li class="active">About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Banner Section -->
+
+    <!--About Section-->
+    <section class="about-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Text Column-->
+                <div class="text-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h2>About<span class="dot">Kib Technologies</span></h2>
+                        </div>
+                        <div class="text">
+                            <p align="justify">Kib technologies established in April 2016, It was founded by Mr. Sumit Tiwari. We have always look forward to building marketing strategies for all scale business, Kib technologies help you to build your brand and create your esteemed recognition By the modes of digital marketing, multimedia marketing, OOH services and IT services we put an impact on consumers toward your brand. With our creative,modern marketing strategy it becomes unchallenging to expand your business. Our IT services we provide the custom websites and mobile application and different software like billing software and management software it became smooth to control and sustain your business. We always look forward to serves you with modern technologies to expand your business and ensures your growth in market.</p>
+                        </div>
+                        <div class="link-box">
+                            <a class="theme-btn btn-style-one" href="about.html">
+                                <i class="btn-curve"></i>
+                                <span class="btn-title">About More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Image Column-->
+                <div class="image-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="image-block wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img data-src="{% static 'images/about_section.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Agency Section-->
+    <section class="agency-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Left Column-->
+                <div class="left-col col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h2>Best IT & Marketing<br>Company<span class="dot">.</span></h2>
+                        </div>
+
+                        <!--Default Tabs-->
+                        <div class="default-tabs tabs-box">
+
+                            <!--Tab Btns-->
+                            <ul class="tab-btns tab-buttons clearfix">
+                                <li data-tab="#tab-1" class="tab-btn active-btn"><span>Our Mission</span></li>
+                                <li data-tab="#tab-2" class="tab-btn"><span>Our Vision</span></li>
+                                <li data-tab="#tab-3" class="tab-btn"><span>Our History</span></li>
+                            </ul>
+
+                            <!--Tabs Container-->
+                            <div class="tabs-content">
+
+                                <!--Tab-->
+                                <div class="tab active-tab" id="tab-1">
+                                    <div class="content">
+                                        <div class="text">A mission to achieve a digital india market with world`s latest technologies.
+                                            KIB always works for commitment & service.
+                                        At last but not the least to provide IT & Marketing skills to each and every possible areas.</div>
+                                    </div>
+                                </div>
+
+                                <!--Tab-->
+                                <div class="tab" id="tab-2">
+                                    <div class="content">
+                                        <div class="text">KIB has a very authentic vision to develop the IT & marketing industry in north India and all over the globe.
+                                            KIB also works to provide the skills for the upcoming generation under the mission of skill India development. We work for our mission to achieve skillful India.
+                                       </div>
+                                    </div>
+                                </div>
+
+                                <!--Tab-->
+                                <div class="tab" id="tab-3">
+                                    <div class="content">
+                                        <div class="text">KIB was a dream by somebuddies at 2013 but it was legalized at april 2016, by Mr.Sumit Kumar Tiwari(B.Tech & M.S computer Engineering at Girne American University) and friends.
+
+                                            KIB was earlier known as marketing agency or strategy maket planner but other hand
+                                            KIB creates a market for IT development & training programmes in Uttarakhand & North part of Uttarpradesh.
+                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Right Column-->
+                <div class="right-col col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="text">KIB works with commitment, & also lash of the latest technologies in IT & Development programs and KIB promises to deliver a perfect market strategy for your brand and business.</div>
+                        <div class="featured-block-two clearfix">
+                            <div class="image"><img data-src="{% static 'images/about_section_banner_img.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="about_section_banner_img.png"></div>
+                            <div class="text">
+                                <ul>
+                                    <li>KIB IT department is totally commanded with young, talented, latest technology & language.
+                                    </li>
+                                    <li>In marketing sector we conquer the market experience with brilliancy .</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section 
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="about.html"><img data-src="{% static 'images/team/ayush_tyagi_kib_technologies_cto.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="ayush_tyagi_kib_technologies_cto.png"></a>
+                            <ul class="social-links clearfix">
+                                <li><a href="https://www.facebook.com/ayush.tyagi.007"><span class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="https://twitter.com/ayushtyagi2139"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="https://www.instagram.com/ayush.uzumaki/"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="https://www.linkedin.com/in/ayush-tyagi-specso/"><span class="fab fa-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="lower-box">
+                            <h5><a href="#">Ayush Tyagi</a></h5>
+                            <div class="designation">CTO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="about.html"><img data-src="{% static 'images/team/sumit_tiwari_kib_technologies_ceo.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="sumit_tiwari_kib_technologies_ceo.png"></a>
+                            <ul class="social-links clearfix">
+                                <li><a href="https://www.facebook.com/icfaitech.sumit"><span class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="https://twitter.com/KibtechSumit"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="lower-box">
+                            <h5><a href="#">Sumit Tiwari</a></h5>
+                            <div class="designation">Founder & CEO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="about.html"><img data-src="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt=""></a>
+                            <ul class="social-links clearfix">
+                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="lower-box">
+                            <h5><a href="#">Shivam Tiwari</a></h5>
+                            <div class="designation">CMO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+	{% endblock %}
+	

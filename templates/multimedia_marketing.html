@@ -1,0 +1,226 @@
+{% extends 'templating.html' %}
+{% load static %}
+	{% block metatag %}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Marketing Kib Technologies |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">	
+	{% endblock %}
+    {% block navtag %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
+    <li ><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown current"><a href="#">Services</a>
+        <ul>
+            <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown"><a href="{% url 'marketing_services' %}">Marketing Services</a>
+                <ul>
+                    <li><a href="{% url 'multimedia_marketing' %}">Multimedia Marketing</a></li>
+                    <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>
+                    <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                    <li><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>
+                    <li><a href="{% url 'event_managment' %}">Event Managment</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+	{% block content %}
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({% static 'images/kib_technologies_breadcrums_banner.jpg' %});"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>Multimedia Marketing</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'marketing_services' %}">Marketing Services</a></li>
+                            <li class="active">Multimedia Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="service-details">
+                        <div class="text-content">
+                            <h3>Out of Home Advertising</h3>
+                            <p align= "justify">OOH is main methods of display advertisement. 
+                            We provide the services of ooh for a ground visibility of your brand due to which it target the huge group. 
+                            It includes deigning, printing, assembling Hodings. 
+                            With the team of professional designers we create the interactive, promising, creative display items for gathering positive brand image for your product. 
+                            Our OOH offers creative and innovative display media which goes along the media plan.
+                            </p>
+                        </div>
+                        
+                        <div class="row clearfix">
+                            <!--Hoarding / Billboard Advertising Block-->
+                            <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <div class="mySlides">
+                                            <img src="{% static 'images/work/doonyps.png' %}" style="width:100%">
+                                         </div>
+                                        
+                                        <div class="mySlides">
+                                            <img src="{% static 'images/work/eepic_jobs.png' %}" style="width:100%">
+                                        </div>
+                                        
+                                        <div class="mySlides">
+                                            <img src="{% static 'images/work/doonyps.png' %}" style="width:100%">
+                                        </div>
+                                    
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                                    <div class="lower-box">
+                                        <h6>Hoarding | Billboard | Uni-pole </h6>
+                                        <div class="text">We offer Billboard advertisements, they are designed to catch a person's attention and create a memorable impression very quickly, leaving the reader thinking about the advertisement after they have driven past it. 
+                                            It is the most traditional media but always in demand.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Hoarding / Billboard Advertising Block-->
+                            
+                            <!--Pole Kiosks Advertising Block-->
+                            <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <img src="{% static 'images/work/doonyps.png' %}" alt="">
+                                    </div>
+                                    <div class="lower-box">
+                                        <h6>Pole Kiosks | Advertising</h6>
+                                        <div class="text">Being a well-recognized organization in the printing and advertisement industry, we are engaged in offering Pole Kiosks Advertising Service. These services are rendered by our specialized professionals while helping clients in enhancing their market visibility and performance.</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Pole Kiosks Advertising Block-->
+                            
+                            <!--Pole Kiosks Advertising Block-->
+                            <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <img src="{% static 'images/work/doonyps.png' %}" alt="">
+                                    </div>
+                                    <div class="lower-box">
+                                        <h6>Auto | E-Rickshaw | Bus  | Branding</h6>
+                                        <div class="text">Auto ads are a family of ad formats that offer a simple and innovative way for you to monetize your content.
+                                        With Auto ads, you place the same piece of ad code once on each page.
+                                        Bus Branding is a remarkable medium of transit advertisement that will help in creating awareness in desired places. 
+                                        It offers lower cost & higher regional flexibility. It is more suitable for brands that want to target the regions & gets excellent visibility.</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Pole Kiosks Advertising Block-->
+                            
+                            <!--Pole Kiosks Advertising Block-->
+                            <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <img src="{% static 'images/work/doonyps.png' %}" alt="">
+                                    </div>
+                                    <div class="lower-box">
+                                        <h6>Van Branding</h6>
+                                        <div class="text">Van Branding is one of the most effective branding advertisement throughout the city. 
+                                        Through this, clients can display the creative & their services through sound system and clients can also use it for sample testing.
+                                        Van Branding will also be helpful for clients because they can display their creative at various places throughout the day.</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Pole Kiosks Advertising Block-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar blog-sidebar">
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>IT Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Marketing Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                                    <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>
+                                    <li class="active"><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>
+                                    <li><a href="{% url 'multimedia_marketing' %}">Multimedia Marketing</a></li>
+                                    <li><a href="{% url 'event_managment' %}">Event Managment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget call-up">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Have a Query ?</h4>
+                                </div>
+                                <div class="text">For any query feel free to call us we will be available for 24 Hours.</div>
+                                <div class="phone"><a href="tel:+91 7454007455"><span class="icon flaticon-call"></span>+91 7454007455</a></div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="call-to-section-two alternate">
+        <div class="auto-container">
+            <div class="inner clearfix">
+                <h2>We’re Ready to Bring Bigger <br>&amp; Stronger Projects</h2>
+                <div class="link-box">
+                    <a class="theme-btn btn-style-two" href="{% url 'contact' %}">
+                        <i class="btn-curve"></i>
+                        <span class="btn-title">Contact with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+	

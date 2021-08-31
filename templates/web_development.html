@@ -1,0 +1,185 @@
+{% extends 'templating.html' %}
+{% load static %}
+	{% block metatag %}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Services Kib Technologies |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">	
+	{% endblock %}
+    {% block navtag %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
+    <li ><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown current"><a href="#">Services</a>
+        <ul>
+            <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+	{% block content %}
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({% static 'images/kib_technologies_breadcrums_banner.jpg' %});"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>Website Development</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="index-2.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li class="active">Website Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="service-details">
+                        <div class="text-content">
+                            <h3>Website Development</h3>
+                            <p>KIB is the best Website development company  which  specializes in web design and custom web development services. Website development company is involved in  engineering, website design, web content development, client-side/server-side scripting. Web development is the process of developing a website for the Internet We are a top web development company  with experience on Wordpress Development, Laravel Development and magento development. We have been ranked top 10 web design company in India for our quality and client satisfaction. Being the best Web Development Company, we are involved in developing a simple single static page or complex web application.</p>
+                        </div>
+                        <div class="main-image image">
+                            <img src="{% static 'images/services/web_development.svg' %}" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar blog-sidebar">
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>All Services</h4>
+                                </div>
+                                <ul>
+                                    <li class="active"><a href="{% url 'web_development' %}"> Web Development</a></li>
+                                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Marketing Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'multimedia_marketing' %}">Multimedia Marketing</a></li>
+                                    <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>
+                                    <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                                    <li><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>
+                                    <li><a href="{% url 'event_managment' %}">Event Managment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget call-up">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Have a Query ?</h4>
+                                </div>
+                                <div class="text">For any query feel free to call us we will be available for 24 Hours.</div>
+                                <div class="phone"><a href="tel:+91 7454007455"><span class="icon flaticon-call"></span>+91 7454007455</a></div>
+                            </div>
+                        </div>
+
+                       <!--<div class="text-col col-md-12 col-sm-12">
+                            <div class="inner">
+                                <h4>Various Technologies</h4>
+                                <div class="row">
+                                    <div class="col-sm-4"><img src="{% static 'images/technology/python.png' %}" alt=""></div>
+                                    <div class="col-sm-4"><img src="{% static 'images/technology/php.png' %}" alt=""></div>
+                                    <div class="col-sm-4"><img src="{% static 'images/technology/Java.png' %}" alt=""></div>
+                                </div>
+                                <ul>
+                                    <li></li>
+                                    <li><img src="{% static 'images/technology/web_development.svg' %}" alt=""></li>
+                                    <li><img src="{% static 'images/technology/web_development.svg' %}" alt=""></li>
+                                    <li><img src="{% static 'images/technology/web_development.svg' %}" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>--> 
+
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+    <section class="testimonials-section">
+        <div class="auto-container">
+            <div class="sec-title">
+                <h2>Web Development Projects<span class="dot">.</span></h2>
+            </div>
+            <div class="carousel-box">
+                <div class="testimonials-carousel owl-theme owl-carousel">
+                    <div class="testi-block">
+                        <div class="inner">
+                            <a href="https://eepicjobs.com/"><img src="{% static 'images/work/eepic_jobs.png' %}" alt="eepic-jobs-kib-web-development-project" ></a>
+                        </div> 
+                    </div>
+                    <div class="testi-block">
+                        <div class="inner">
+                            <a href="https://doonyps.com/"><img src="{% static 'images/work/doonyps.png' %}" alt="doonyps-kib-web-development-project"></a>
+                        </div> 
+                    </div>
+                    <div class="testi-block">
+                        <div class="inner">
+                            <a href="https://dkaksha.com/"><img src="{% static 'images/work/dkaksha.png' %}" alt="dkaksha-kib-web-development-project"></a>
+                        </div> 
+                    </div>
+                    <div class="testi-block">
+                        <div class="inner">
+                            <a href="https://fazalthedesigner.com/"><img src="{% static 'images/work/falaz-the-designer.png' %}" alt="fazal-the-designer-kib-web-development-project"></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="call-to-section-two alternate">
+        <div class="auto-container">
+            <div class="inner clearfix">
+                <h2>We’re Ready to Bring Bigger <br>&amp; Stronger Projects</h2>
+                <div class="link-box">
+                    <a class="theme-btn btn-style-two" href="{% url 'contact' %}">
+                        <i class="btn-curve"></i>
+                        <span class="btn-title">Contact with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> 
+	{% endblock %}
+	

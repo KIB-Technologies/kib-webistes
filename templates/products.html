@@ -1,0 +1,195 @@
+{% extends 'templating.html' %}
+{% load static %}
+	{% block metatag %}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Kib Technologies |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">	
+	{% endblock %}
+    {% block navtag %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
+    <li class="current"><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown"><a href="#">Services</a>
+        <ul>
+            <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blogs</a></li> 
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+    {% block content %}
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({% static 'images/kib_technologies_breadcrums_banner.jpg' %});"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>Products</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="index-2.html">Home</a></li>
+                            <li class="active">products</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Kibkart-->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="https://kibkart.com" target="_blank"><img src="{% static 'images/products/kibkart_grocery_application.svg' %}" alt="kibkart_grocery_application"></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Grocery Application</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="https://kibkart.com" target="_blank">Kib Kart</a></h5>
+                            <div class="text"> If you are planning for your own online grocery app to expand your business and target the consumer in great numbers, KIB Kart has done almost everything for you.</div>
+                            <div class="link-box"><a class="theme-btn" href="https://kibkart.com" target="_blank"><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dkaksha-->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="http://dkaksha.com/" target="_blank"><img src="{% static 'images/products/dkaksha_online_learning.svg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Online Learning System</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="http://kibtechnologies.com/" target="_blank">DKAKKSHA</a></h5>
+                            <div class="text">Dkaksha  is a platform for online education system for a upcoming digital era . 
+                                It fully support the  online classes and content management system . 
+                            </div>
+                            <div class="link-box"><a class="theme-btn" href="https://dkaksha.com" target="_blank"><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--kibbill-->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="https://kibbill.kibtechnologies.com" target="_blank"><img src="{% static 'images/products/kibbill_billing_software.svg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Billing Software</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="https://kibbill.kibtechnologies.com" target="_blank">KIB BILL</a></h5>
+                            <div class="text"> 
+                                KibBill is an Online Billing Software, It is a software that manages sales, accounts, keep records of payments.
+                            </div>
+                            <div class="link-box"><a class="theme-btn" href="https://kibbill.kibtechnologies.com" target="_blank"><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Barbo.-->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="https://barbo.kibtechnologies.com/"><img src="{% static 'images/products/salon_booking_application.svg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Salon Booking Application</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="https://barbo.kibtechnologies.com/">BARBO</a></h5>
+                            <div class="text">Kib provide a total digital solution for saloon business which name called BARBO. 
+                            Its helpful for single vendor and multi vendor support system.</div>
+                            <div class="link-box"><a class="theme-btn" href="https://barbo.kibtechnologies.com/"><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--KHOSPICE.-->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="https://barbo.kibtechnologies.com/"><img src="{% static 'images/products/khospice_kib_technologies_product.svg' %}" alt="khospice_kib_technologies_product.svg"></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Hospital Management System</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="">KHOSPICE</a></h5>
+                            <div class="text">khospice berief.</div>
+                            <div class="link-box"><a class="theme-btn" href=""><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--KIB TRIP.-->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href=""><img src="{% static 'images/products/kibtrip_kib_technologies_product.svg' %}" alt="kibtrip_kib_technologies_product"></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Tour & Travel</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="">KIB TRIP</a></h5>
+                            <div class="text">kibtrip breif.</div>
+                            <div class="link-box"><a class="theme-btn" href=""><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--KIB WORKHOP
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="https://barbo.kibtechnologies.com/"><img src="{% static 'images/products/kib_workshop_kib_technologies_product.svg' %}" alt="kib_workshop_kib_technologies_product"></a>
+                        </div>    
+                        <div class="lower-box">
+                            <div class="post-meta">
+                                <ul class="clearfix">
+                                    <li><span class="dot">Traning & Workshop.</span></li>
+                                </ul>
+                            </div>
+                            <h5><a href="https://barbo.kibtechnologies.com/">KIB TRIP</a></h5>
+                            <div class="text">Kib provide a total digital solution for saloon business which name called BARBO. 
+                            Its helpful for single vendor and multi vendor support system.</div>
+                            <div class="link-box"><a class="theme-btn" href="https://barbo.kibtechnologies.com/"><span class="flaticon-next-1"></span></a></div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+	{% endblock %}
+	

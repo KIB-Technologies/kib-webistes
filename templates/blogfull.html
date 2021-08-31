@@ -1,0 +1,134 @@
+{% extends 'templating.html' %}
+{% load static %}
+	{% block metatag %}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Blog.title}} |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">	
+	{% endblock %}
+    {% block navtag %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
+    <li><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown"><a href="#">Services</a>
+        <ul>
+            <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </li>
+    <li class="current"><a href="{% url 'blog' %}">Blogs</a></li> 
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+    {% block content %}
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({% static 'images/kib_technologies_breadcrums_banner.jpg' %});"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{Blog.title}}</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li class="active">Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="blog-details">
+                        <!--News Block-->
+                        <div class="post-details">
+                            <div class="inner-box">
+                                <div class="image-box" style="padding : 0px 100px; 0px; 100px">
+                                    <a href="blog-single.html"><img src="{{ Blog.image.url }}" alt="{{ Blog.imagealt }}"></a>
+                                </div>
+                                <div class="lower-box">
+                                    <div class="post-meta">
+                                        <ul class="clearfix">
+                                            <li><span class="far fa-clock"></span> {{ Blog.blog_date }}</li>
+                                            <li><span class="far fa-user-circle"></span> {{ Blog.user.username }}Admin</li>
+                                            <li><span class="far fa-comments"></span> {{ Blog.source }}</li>
+                                        </ul>
+                                    </div>
+                                    <h4>{{Blog.title}}</h4>
+                                    <div class="text">
+                                        <p>{{ Blog.blogshortdes }}</p>
+                                        <p>{{ Blog.bloghiglight }}</p>
+                                        <p>{{ Blog.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar blog-sidebar">
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>IT Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Marketing Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>
+                                    <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                                    <li><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>
+                                    <li><a href="{% url 'event_managment' %}">Event Managment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget call-up">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Have a Query ?</h4>
+                                </div>
+                                <div class="text">For any query feel free to call us we will be available for 24 Hours.</div>
+                                <div class="phone"><a href="tel:+91 7454007455"><span class="icon flaticon-call"></span>+91 7454007455</a></div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+	{% endblock %}

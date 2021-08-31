@@ -1,0 +1,1027 @@
+{% extends 'templating.html' %}
+{% load static %}
+
+    {% block metatags %}
+    <meta name="google-site-verification" content="dvNbdbRRHbqNZCRURgzWXDJOdzzj_UQ8G78tIZGGUiQ" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kib Technologies |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="Software Development company in Dehradun, Software Development company in India, Web development company in Dehradun, Web Development company in North India, IT Company in Dehradun">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">
+    
+    {% endblock %}
+
+    {% block navtag %}
+    <li class="current"><a href="{% url 'index' %}">Home</a></li>
+    <li ><a href="{% url 'about' %}">About Us</a></li>
+    <li><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown"><a href="#">Services</a>
+        <ul>
+           <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+            <!--<li class="dropdown"><a href="{% url 'marketing_services' %}">Marketing Services</a>-->
+            <!--    <ul>-->
+            <!--        <li><a href="{% url 'multimedia_marketing' %}">Multimedia Marketing</a></li>-->
+            <!--        <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>-->
+            <!--        <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>-->
+            <!--        <li><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>-->
+            <!--        <li><a href="{% url 'event_managment' %}">Event Managment</a></li>-->
+            <!--    </ul>-->
+            <!--</li>-->
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blogs</a></li> 
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+
+    {% block content %}
+    <!-- Banner Section -->
+    <section class="banner-section banner-one">
+
+        <div class="left-based-text">
+            <div class="base-inner">
+                <div class="hours">
+                    <ul class="clearfix">
+                        <li><span>mon - fri</span></li>
+                        <li><span>9am - 7pm</span></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="https://twitter.com/KibTechnologies"><span>Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/kibristech29"><span>Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/kibtechnologies/"><span>Instagram</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-carousel owl-theme owl-carousel">
+            <!-- Slide Item -->
+            <div class="slide-item">
+                <div class="image-layer" style="background-image: url({% static 'images/main-slider/kib_technologies_it_services_provider_company_in_dehradun_.jpg' %});"></div>
+                <div class="left-top-line"></div>
+                <div class="right-bottom-curve"></div>
+                <div class="right-top-curve"></div>
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">welcome to KIB</div>
+                                <h1>A Technology Company</h1>
+                                <div class="link-box">
+                                    <a class="theme-btn btn-style-one" href="about.html">
+                                        <i class="btn-curve"></i>
+                                        <span class="btn-title">Discover More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Item -->
+            <div class="slide-item">
+                <div class="image-layer" style="background-image: url({% static 'images/main-slider/kib_technologies_it_services_provider_company_in_dehradun_.jpg' %});"></div>
+                <div class="left-top-line"></div>
+                <div class="right-bottom-curve"></div>
+                <div class="right-top-curve"></div>
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">welcome to KIB</div>
+                                <h1>Smart Marketing Agency</h1>
+                                <div class="link-box">
+                                    <a class="theme-btn btn-style-one" href="about.html">
+                                        <i class="btn-curve"></i>
+                                        <span class="btn-title">Discover More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End Banner Section -->
+    
+    
+    <section class="we-work-section">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>IT Services We Provides<span class="dot">.</span></h2>
+            </div>
+            <!--Work Tabs-->
+            <div class="work-tabs tabs-box">
+
+                <!--Tab Btns-->
+                <ul class="tab-btns tab-buttons clearfix">
+                    <li data-tab="#web_development" class="tab-btn active-btn"><span>Web Development</span></li>
+                    <li data-tab="#app_development" class="tab-btn"><span>App Development</span></li>
+                    <li data-tab="#software_development" class="tab-btn"><span>Software Development</span></li>
+                    <li data-tab="#game_development" class="tab-btn"><span>Game Development</span></li>
+                    <li data-tab="#cyber_security" class="tab-btn"><span>Cyber Security</span></li>
+                </ul>
+
+                <!--Tabs Container-->
+                <div class="tabs-content">
+                    <!--Tab-->
+                    <div class="tab active-tab" id="web_development" style="display: block;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/web_development.svg"><img src="/static/images/services/web_development.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Web Development Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">KIB is the best Website development company  which  specializes in web design and custom web development services. 
+                                                        Website development company is involved in  engineering, website design, web content development, client-side/server-side scripting. 
+                                                        Web development is the process of developing a website for the Internet We are a top web development company  with experience on Wordpress Development, Laravel Development and magento development. 
+                                                        We have been ranked top 10 web design company in India for our quality and client satisfaction. 
+                                                        Being the best Web Development Company, we are involved in developing a simple single static page or complex web application.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_web_development_services">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tab-->
+                    <div class="tab" id="app_development" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/mobile_development.svg"><img src="/static/images/services/mobile_development.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Application Development Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">Our Team has a long term involvement with custom portable applications advancement that traverses a wide scope of ventures from retail to medical care and energy. 
+                                                    You need a proactive group who can plunge into your business environment. Who can investigate the market and comprehend your necessities, prerequisites and capacities. Who can construct a genuinely custom system and open the maximum capacity of portable innovation for your organization. 
+                                                    This is what is the issue here. We become acquainted with your business and tailor our application improvement administrations to your objectives and desires.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_mobile_app_development_services">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tab-->
+                    <div class="tab" id="software_development" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/software_development.svg"><img src="/static/images/services/software_development.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Software Development Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">With the advent of the Software and Information Technologies, Software development has rapidly taken this world into its revolution. The advantages these technologies provide are proven footprints that they leave behind for lifetimes. 
+                                                        A software solution provides an organization, a business setup and even individuals, to streamline their workflow into a paperless, time-saving, stable, efficient, automated and managed infrastructure. 
+                                                        Software application adds stability and efficiency to the organization’s process control and flow. 
+                                                        This is the reason why many organizations, govt. bodies and business setups are rapidly hiring software firms to develop and integrate a solution that could be streamlined into their traditional infrastructure to introduce more stability and efficiency.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_software_development_services">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tab-->
+                    <div class="tab" id="game_development" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/game_development.svg"><img src="/static/images/services/game_development.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Game Development Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">KiB Technologies beleive in providing an exeptional and addictive gamming experience with our best in class gaming solutions. We give far reaching advancement administrations to pre-creation, creation and after creation. As a main game plan organization our scope of administrations covers everything from character plan and game mechanics to coding, improvement and testing. We're your all in one resource for game improvement administrations. The accompanying gives you a brief of our administrations in game turn of events.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_game_development_services">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tab-->
+                    <div class="tab" id="cyber_security" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/cyber_security.svg"><img src="/static/images/services/cyber_security.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Cyber Security</h4>
+                                                <div class="text">
+                                                    <p align="justify">KIB is the best Website development company  which  specializes in web design and custom web development services. 
+                                                        Website development company is involved in  engineering, website design, web content development, client-side/server-side scripting. 
+                                                        Web development is the process of developing a website for the Internet We are a top web development company  with experience on Wordpress Development, Laravel Development and magento development. 
+                                                        We have been ranked top 10 web design company in India for our quality and client satisfaction. 
+                                                        Being the best Web Development Company, we are involved in developing a simple single static page or complex web application.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_cyber_security_services">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Services Section-->
+  <!--  <section class="services-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <div class="title-block col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h2>We Shape the Perfect <br>Solutions<span class="dot">.</span></h2>
+                            <div class="lower-text">We are committed to providing our customers with exceptional
+                                service while offering our employees the best training.</div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="bottom-curve"></div>
+                        <div class="icon-box"><span class="flaticon-responsive"></span></div>
+                        <h6><a href="web-development.html">Website <br>Development</a></h6>
+                    </div>
+                </div>
+            
+                <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
+                    data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="bottom-curve"></div>
+                        <div class="icon-box"><span class="flaticon-app-development"></span></div>
+                        <h6><a href="graphic-designing.html">Mobile App <br>Development</a></h6>
+                    </div>
+                </div>
+                
+                <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="bottom-curve"></div>
+                        <div class="icon-box"><span class="flaticon-computer"></span></div>
+                        <h6><a href="digital-marketing.html">Software <br>Development</a></h6>
+                    </div>
+                </div>
+               
+                <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
+                    data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="bottom-curve"></div>
+                        <div class="icon-box"><span class="flaticon-development"></span></div>
+                        <h6><a href="seo.html">Game <br>Development</a></h6>
+                    </div>
+                </div>
+                
+                <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
+                    data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="bottom-curve"></div>
+                        <div class="icon-box"><span class="flaticon-digital-marketing"></span></div>
+                        <h6><a href="app-development.html">Cyber <br>Security</a></h6>
+                    </div>
+                </div>
+            
+                <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
+                    data-wow-delay="900ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="bottom-curve"></div>
+                        <div class="icon-box"><span class="flaticon-ui"></span></div>
+                        <h6><a href="ui-designing.html">Graphic <br>Designing</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+  <!--  <section class="services-section-three">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>Our Marketing Services <span class="dot">.</span></h2>
+            </div>
+            <div class="services">
+                <div class="row clearfix">
+                    
+                    <div class="service-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                            <div class="bottom-curve"></div>
+                            <div class="icon-box"><span class="flaticon-vector"></span></div>
+                            <h5><a href="#">Multimedia <br>Marketing</a></h5>
+                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span></a></div>
+                        </div>
+                    </div>
+
+                    <div class="service-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <div class="bottom-curve"></div>
+                            <div class="icon-box"><span class="flaticon-digital"></span></div>
+                            <h5><a href="#">CINEMA <br>BRANDING</a></h5>
+                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span></a></div>
+                        </div>
+                    </div>
+
+                    <div class="service-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                            <div class="bottom-curve"></div>
+                            <div class="icon-box"><span class="flaticon-instant-camera"></span></div>
+                            <h5><a href="#">Digital <br>Marketing</a></h5>
+                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span></a></div>
+                        </div>
+                    </div>
+
+                    <div class="service-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInUp animated" data-wow-delay="900ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 900ms; animation-name: fadeInUp;">
+                            <div class="bottom-curve"></div>
+                            <div class="icon-box"><span class="flaticon-monitor"></span></div>
+                            <h5><a href="#">OUT OF HOME <br>ADVERTISING</a></h5>
+                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span></a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+    <!--We DO Section-->
+    <section class="we-do-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Left Column-->
+                <div class="left-col col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h2>Why  <br>KIB Technologies<span class="dot">.</span></h2>
+                        </div>
+                        <div class="featured-block clearfix">
+                            <div class="image"><img data-src="{% static 'images/about_section_banner_img.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt=""></div>
+                            <div class="text">KIB works with commitment, & also lash of the latest technologies in IT & Development programs and KIB promises to deliver a perfect market strategy for your brand and business.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Right Column-->
+                <div class="right-col col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="faq-box">
+                            <ul class="accordion-box clearfix">
+                                <!--Block-->
+                                <li class="accordion block active-block">
+                                    <div class="acc-btn active"><span class="count">1.</span> IT Services</div>
+                                    <div class="acc-content current">
+                                        <div class="content">
+                                            <div class="text">KIB IT department is totally commanded with young, talented, latest technology & language.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--Block-->
+                                <li class="accordion block">
+                                    <div class="acc-btn"><span class="count">2.</span> Marketing
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">In marketing sector we conquer the market experience with brilliancy.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="we-work-section">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>Marketing Services We Provides<span class="dot">.</span></h2>
+            </div>
+            <!--Work Tabs-->
+            <div class="work-tabs tabs-box">
+
+                <!--Tab Btns-->
+                <ul class="tab-btns tab-buttons clearfix">
+                    <li data-tab="#digital_marketing" class="tab-btn active-btn"><span>Digital Marketing</span></li>
+                    <li data-tab="#cinema_marketing" class="tab-btn"><span>Cinema Branding</span></li>
+                    <li data-tab="#ooh_marketing" class="tab-btn"><span>Out of Home Advertising</span></li>
+                    <li data-tab="#event_managment" class="tab-btn"><span>Event Managment</span></li>
+                </ul>
+
+                <!--Tabs Container-->
+                <div class="tabs-content">
+                    <!--Tab-->
+                    <div class="tab active-tab" id="digital_marketing" style="display: block;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/digital_marketing.svg"><img src="/static/images/services/digital_marketing.svg" alt="digital_marketing" width="70%"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Digital Marketing Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">Digital marketing is most popular marketing strategy on this era of technology. It uses online modes to promote your product. We provide the digital marketing services which focuses on growing your business successfully with online marketing services. It includes social media marketing, SEO (search engine optimization), SEM (Search engine marketing), PPC (pay-per click) etc which increases traffic on your websites.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_digital_marketing">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tab-->
+                    <div class="tab" id="cinema_marketing" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/cinema_branding.svg"><img src="/static/images/services/cinema_branding.svg" width="70%" alt="cinema_branding"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Cinema Branding Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">Entertainment industries are one of the leading industries in the world, and how impact full is that, by the means of these industries we can also promote your brand. In cinema branding we include the advertisement displayed during the movie, during intermission. We works on it for creating, scalable, impact full brand identity. Cinema branding is used from ages due to its effectiveness.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_cinema_branding">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tab-->
+                    <div class="tab" id="ooh_marketing" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Out of Home Advertising Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">OOH is main methods of display advertisement. We provide the services of ooh for a ground visibility of your brand due to which it target the huge group. It includes deigning, printing, assembling Hodings. With the team of professional designers we create the interactive, promising, creative display items for gathering positive brand image for your product. Our OOH offers creative and innovative display media which goes along the media plan.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_out_of_home_ads">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <img src="/static/images/services/out-of-home-advertising-services.svg" alt="out-of-home-advertising-services.svg-of-kib-technologies">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tab-->
+                    <div class="tab" id="event_managment" style="display: none;">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <!--Content Side-->
+                                <div class="content-side col-lg-7 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <div class="image-box">
+                                                    <a href="/static/images/services/event_managment.svg"><img src="/static/images/services/event_managment.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-side col-lg-5 col-md-12 col-sm-12">
+                                    <div class="blog-details">
+                                        <!--News Block-->
+                                        <div class="post-details">
+                                            <div class="inner-box">
+                                                <h4>Event Management Services</h4>
+                                                <div class="text">
+                                                    <p align="justify">One of the most promising and heart pleasing services of ours are to organizing the professional and social welfare events. The team of highly enthusiastic, creative and innovative employee organizes the events which last the delightful impact on visitor. This includes all kinds of events either for entertainment purposes or for professional purposes. We also organized events for social welfare of poor and unprivileged children.</p>
+                                                </div>    
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="mailto:info.kibtech@gmail.com">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">Get Quotes</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="col-lg-6">
+                                                    <a class="theme-btn btn-style-one" href="/kib_technologies_event_managment">
+                                                        <i class="btn-curve"></i>
+                                                        <span class="btn-title">View More</span>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facts-section">
+        <div class="image-layer" style="background-image: url({% static 'images/kib_technologies_team_banner.jpg' %});"></div>
+        <div class="auto-container">
+            <div class="inner-container">
+
+                <!-- Fact Counter -->
+                <div class="fact-counter">
+                    <div class="row clearfix">
+
+                        <!--Column-->
+                        <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                            <div class="inner">
+                                <div class="content">
+                                    <div class="count-outer count-box counted">
+                                        <span class="count-text" data-speed="4000" data-stop="8705">8705</span>
+                                    </div>
+                                    <div class="counter-title">Projects Completed</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Column-->
+                        <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                            <div class="inner">
+                                <div class="content">
+                                    <div class="count-outer count-box alternate counted">
+                                        <span class="count-text" data-speed="3000" data-stop="480">480</span>
+                                    </div>
+                                    <div class="counter-title">Active clients</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Column-->
+                        <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                            <div class="inner">
+                                <div class="content">
+                                    <div class="count-outer count-box counted">
+                                        <span class="count-text" data-speed="3000" data-stop="626">626</span>
+                                    </div>
+                                    <div class="counter-title">cups of coffee</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Column-->
+                        <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                            <div class="inner">
+                                <div class="content">
+                                    <div class="count-outer count-box counted">
+                                        <span class="count-text" data-speed="4000" data-stop="9704">9704</span>
+                                    </div>
+                                    <div class="counter-title">happy clients</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+     <!--About Section-->
+    <section class="about-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Text Column-->
+                <div class="text-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h2>About<span class="dot">Kib Technologies</span></h2>
+                        </div>
+                        <div class="text">
+                            <p align="justify">Kib technologies established in April 2016, It was founded by Mr. Sumit Tiwari. We have always look forward to building marketing strategies for all scale business, Kib technologies help you to build your brand and create your esteemed recognition By the modes of digital marketing, multimedia marketing, OOH services and IT services we put an impact on consumers toward your brand. With our creative,modern marketing strategy it becomes unchallenging to expand your business. Our IT services we provide the custom websites and mobile application and different software like billing software and management software it became smooth to control and sustain your business. We always look forward to serves you with modern technologies to expand your business and ensures your growth in market.</p>
+                        </div>
+                        <div class="link-box">
+                            <a class="theme-btn btn-style-one" href="about.html">
+                                <i class="btn-curve"></i>
+                                <span class="btn-title">About More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Image Column-->
+                <div class="image-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="image-block wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img data-src="{% static 'images/about_section.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="about_kib"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section 
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="about.html"><img src="{% static 'images/team/ayush_tyagi_kib_technologies_cto.png' %}" alt="ayush_tyagi_kib_technologies_cto.png"></a>
+                            <ul class="social-links clearfix">
+                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="lower-box">
+                            <h5><a href="#">Ayush Tyagi</a></h5>
+                            <div class="designation">CTO</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="about.html"><img src="{% static 'images/team/sumit_tiwari_kib_technologies_ceo.png' %}" alt="sumit_tiwari_kib_technologies_ceo.png"></a>
+                            <ul class="social-links clearfix">
+                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="lower-box">
+                            <h5><a href="#">Sumit Tiwari</a></h5>
+                            <div class="designation">Founder & CEO</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <a href="about.html"><img src="#" alt=""></a>
+                            <ul class="social-links clearfix">
+                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="lower-box">
+                            <h5>Sumit Tiwari</a></h5>
+                            <div class="designation">CMO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+        <div class="image-layer" style="background-image: url({% static 'images/kib_technologies_team_banner.jpg' %});"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="icon-box"><span class="flaticon-app-development"></span></div>
+                <h2>Great things in business are never done by one person. <span>They’re done by a team of
+                        people.</span></h2>
+            </div>
+        </div>
+    </section>
+    <!-- End Funfacts Section -->
+
+    <!--Sponsors Section-->
+    <section class="sponsors-section">
+        <div class="sponsors-outer">
+            <!--Sponsors-->
+            <div class="auto-container">
+                <!--Sponsors Carousel-->
+                <div class="sponsors-carousel owl-theme owl-carousel">
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/arena-animation.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="arena_animation.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/edify.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="edify.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/honda.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="godrej.jpg" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/icfai.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="hgs.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/maruti-suzuki.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="honda_kib_technologies.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/pacific.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="ICFAI.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/poly-kids.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="maruti_suzuki_kib_technologies.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/renault.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="punjab_jew.jpg" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/sarovar.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="Renault_kib_technologies.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/stallion.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="san_disk.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/toyota.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="sarovar_hotels.jpg" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/vidyamandir-classes.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="stallion fur studio.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/vlccc.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="the-poly-kids-play-school-dehradun-logo.png" /></figure>
+                    </div>
+                    <div class="slide-item">
+                        <figure class="image-box"><img data-src="{% static 'images/clients/fazal-the-designer.png' %}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="the-poly-kids-play-school-dehradun-logo.png" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Section -->
+    <section class="call-to-section">
+        <div class="auto-container">
+            <div class="inner clearfix">
+                <div class="shape-1 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms"></div>
+                <div class="shape-2 wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms"></div>
+                <h2>Let's Get Your Project <br>Started!</h2>
+                <div class="link-box">
+                    <a class="theme-btn btn-style-two" href="about.html">
+                        <i class="btn-curve"></i>
+                        <span class="btn-title">Contact with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

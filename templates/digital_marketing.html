@@ -1,0 +1,189 @@
+{% extends 'templating.html' %}
+{% load static %}
+	{% block metatag %}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing  |Kib Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">	
+	{% endblock %}
+    {% block navtag %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
+    <li ><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown current"><a href="#">Services</a>
+        <ul>
+            <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+	{% block content %}
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({% static 'images/kib_technologies_breadcrums_banner.jpg' %});"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>Digital Marketing Services</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'marketing_services' %}">Marketing Services</a></li>
+                            <li class="active">Digital Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="service-details">
+                        <div class="text-content">
+                            <h3>Digital Marketing Services</h3>
+                            <p align="justify">We are a leading online marketing agency in Dehradun that offers an exhaustive scope of administrations to enable your business to develop. <br>
+                            Kib is a main computerized advertising office that centers around developing your business effectively with internet showcasing administrations. Regardless of whether you need to build transformations, traffic to your site, or both, we can assist you with planning an Internet promoting effort that can assist you with arriving at your objectives. <br>
+                            We're centered around expanding your leads and deals, we have our inhouse groups of Digital Marketing Professionals spend significant time in all aspects of advanced advertising, we investigate your site and showcasing endeavors and suggest the best thing for you.
+                            Regardless of whether you come to us for SEO help, Designing your Website, Social Media Strategies, Conversion Rate Optimization. We adopt a main concern strategy to each extend, zeroing in on the customer's particular business objectives and the most ideal approaches to accomplish them on the web. Our customers reliably observe expanded traffic, lower skip rates, upgraded brand reliability, and new qualified leads.</p>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <!--Service Block-->
+                        <div class="service-block-two col-xl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="bottom-curve"></div>
+                                <h5><a href="#">Search Engine<br>Optimization</a></h5>
+                                <div class="text">Get More Website Traffic and New Customers with our Professional SEO Services. We can help you to rank higher and be found by your customers on Google. Chat with one of our SEO expert today and discover the possibilities.</div>
+                                <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span></a></div>
+                            </div>
+                        </div>
+
+                        <!--Service Block-->
+                        <div class="service-block-two col-xl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="bottom-curve"></div>
+                                <h5><a href="#">Social Media<br>Marketing</a></h5>
+                                <div class="text">We offer complete social media services by creating and managing top-performing social media campaigns for businesses growth & meeting their goals. We use Facebook, Instagram, Linkedin, Google,  on your behalf & work creatively to transform your social media presence.</div>
+                                <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span></a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="main-image image">
+                        <img src="{% static 'images/services/digital_marketing_services_kib_technologies.jpg' %}" alt="digital_marketing_services_kib_technologies.jpg">
+                        <div class="text-content" style=" margin-top: 70px;">
+                            <h6>Scope of Work.</h6>
+                            <li>Maintaining Social Media Accounts on behalf of the client.</li>
+                            <li>Running ads on Facebook, Instagram & Google.</li>
+                            <li>Making page interactive with regular interaction.</li>
+                            <li>Link the page with the popular social networking sites.</li>
+                            <li>Analyse, plan and strategically execute Social Media promotions for your brand. We have experienced team which is continuously monitoring the updates of social media.</li>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar blog-sidebar">
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>IT Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget services">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Marketing Services</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>
+                                    <li class="active"><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                                    <li><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>
+                                    <li><a href="{% url 'event_managment' %}">Event Managment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget call-up">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h4>Have a Query ?</h4>
+                                </div>
+                                <div class="text">For any query feel free to call us we will be available for 24 Hours.</div>
+                                <div class="phone"><a href="tel:+91 7454007455"><span class="icon flaticon-call"></span>+91 7454007455</a></div>
+                            </div>
+                        </div>
+
+                       <!--<div class="text-col col-md-12 col-sm-12">
+                            <div class="inner">
+                                <h4>Various Technologies</h4>
+                                <div class="row">
+                                    <div class="col-sm-4"><img src="{% static 'images/technology/python.png' %}" alt=""></div>
+                                    <div class="col-sm-4"><img src="{% static 'images/technology/php.png' %}" alt=""></div>
+                                    <div class="col-sm-4"><img src="{% static 'images/technology/Java.png' %}" alt=""></div>
+                                </div>
+                                <ul>
+                                    <li></li>
+                                    <li><img src="{% static 'images/technology/web_development.svg' %}" alt=""></li>
+                                    <li><img src="{% static 'images/technology/web_development.svg' %}" alt=""></li>
+                                    <li><img src="{% static 'images/technology/web_development.svg' %}" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>--> 
+
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="call-to-section-two alternate">
+        <div class="auto-container">
+            <div class="inner clearfix">
+                <h2>We’re Ready to Bring Bigger <br>&amp; Stronger Projects</h2>
+                <div class="link-box">
+                    <a class="theme-btn btn-style-two" href="{% url 'contact' %}">
+                        <i class="btn-curve"></i>
+                        <span class="btn-title">Contact with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> 
+	{% endblock %}
+	

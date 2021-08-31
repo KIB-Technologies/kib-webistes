@@ -1,0 +1,86 @@
+{% extends 'templating.html' %}
+{% load static %}
+
+    {% block metatags %}
+    <meta name="google-site-verification" content="dvNbdbRRHbqNZCRURgzWXDJOdzzj_UQ8G78tIZGGUiQ" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kib Technologies |Best Marketing & IT Services Company in India</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="author" content="Sumit Tiwari">
+    <meta name="publisher" content="Kib Technologies">
+    {% endblock %}
+
+    {% block navtag %}
+    <li class="current"><a href="{% url 'index' %}">Home</a></li>
+    <li ><a href="{% url 'about' %}">About Us</a></li>
+    <li><a href="{% url 'products' %}">Product</a></li>
+    <li class="dropdown"><a href="#">Services</a>
+        <ul>
+           <li class="dropdown current"><a href="{% url 'it_services' %}">IT Services</a>
+                <ul>
+                    <li><a href="{% url 'web_development' %}"> Web Development</a></li>
+                    <li><a href="{% url 'mobile_app_development' %}">Mobile App Development</a></li>
+                    <li><a href="{% url 'software_development' %}">Software Development</a></li>
+                    <li><a href="{% url 'game_development' %}">Game Development</a></li>
+                    <li><a href="{% url 'cyber_security' %}">Cyber Security</a></li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown"><a href="{% url 'marketing_services' %}">Marketing Services</a>
+                <ul>
+                    <li><a href="{% url 'multimedia_marketing' %}">Multimedia Marketing</a></li>
+                    <li><a href="{% url 'cinema_branding' %}">Cinema Branding</a></li>
+                    <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                    <li><a href="{% url 'out_of_home_ads' %}">Out of Home Advertising</a></li>
+                    <li><a href="{% url 'event_managment' %}">Event Managment</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="{% url 'blog' %}">Blogs</a></li> 
+    <li><a href="{% url 'career' %}">Career</a></li> 
+    <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+    {% endblock %}
+
+    {% block content %}
+    <section class="get-quote-three">
+        <div class="auto-container">
+            <div class="leave-comments">
+                            <div class="comments-title">
+                                <h3>Leave a comment</h3>
+                            </div>
+                            <div class="default-form comment-form">
+                                <form method="post" action="#">
+                                    <div class="row clearfix">
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="username" placeholder="Your Name" required="">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <input type="email" name="email" placeholder="Email Address" required="">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="username" placeholder="Phone Number" required="">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="username" placeholder="Subject" required="">
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <textarea name="message" placeholder="Your Comments"></textarea>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <button type="submit" class="theme-btn btn-style-one">
+                                                <i class="btn-curve"></i>
+                                                <span class="btn-title">Submit Comment</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+        </div>
+    </section>
+    {% endblock %}
